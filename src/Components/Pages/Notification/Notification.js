@@ -1,5 +1,5 @@
 import React from "react";
-function Notification(){
+function Notification() {
   return <h1>Notification</h1>;
 }
 export default Notification;
