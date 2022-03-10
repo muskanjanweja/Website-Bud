@@ -1,23 +1,21 @@
-import { render } from '@testing-library/react';
-import React from 'react'
-import { useHistory } from "react-router-dom";
+import React from "react";
+import Navbar from "../../Navbar/Navbar";
+import "./home.css";
+import homepage from '../../Pages/homepage.jpg';
 
 const Home = () => {
-  // const history = useHistory();
+  return (
+    <div>
+      <Navbar />
+      <h1> WELCOME!!!</h1>
+      <p>Click to check the progress...</p>
+      <button type="button" class="btn btn-primary">Get Started</button>
+      <img src={homepage}></img>
+    </div>
 
-  //const coursesPage = () => {
-  //history.push("/InternHome")
-  //}
-  render()
-  {
-    console.log("AA")
-    return (
-      <div>
-        < h1 > Home</h1 >
-      </div>
-    )
-  }
-}
+  );
+};
 
 export default Home;
+
 

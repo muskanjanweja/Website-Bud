@@ -1,55 +1,55 @@
-import React from 'react'
-import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  return(
-    <nav className="navbar navbar-expand-lg navbar-mainbg">
-      <NavLink className= "navbar-brandnavbar-logo" to="/" exact>
-        BudTracker
-      </NavLink>
-    <button
-      className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarContentSuport" aria-expanded="false" aria-label="Toggle navigation">
-      <i className = "fas fa-barstext-white"></i>
-
-    </button>
-    <div className="collapsenavbar-collapse" id="navbarSupportContent">
-      <ul className="navbar-nav ml-auto">
-        <div className="hori-selector">
-          <div className="left"></div>
-          <div className="right"></div>
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <div className="d-flex">
+        <div>
+          <a className="navbar-brand font-weight-bold">BudTracker</a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
         </div>
-        <li className="nav-item active">
-          <NavLink className="nav-link"
-          to="/" exact>
-            <i className="fasfa-tachometer-alt">
-            </i>Home
-          </NavLink>
-        </li>
-        <li className="nav-item active">
-          <NavLink className="nav-link"
-          to="/" exact>
-            <i className="fasfa-tachometer-alt">
-            </i>Profile
-          </NavLink>
-        </li>
-        <li className="nav-item active">
-          <NavLink className="nav-link"
-          to="/" exact>
-            <i className="fasfa-tachometer-alt">
-            </i>Project
-          </NavLink>
-        </li>
-        <li className="nav-item active">
-          <NavLink className="nav-link"
-          to="/" exact>
-            <i className="fasfa-tachometer-alt">
-            </i>Notification
-          </NavLink>
-        </li>
-      </ul>
-    </div>
+        <div
+          style={{ position: "absolute", right: 10 }}
+          className="collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <a className="nav-link" href="/home">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/profile">
+                Profile
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/project">
+                Project
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/notification">
+                Notification
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;
