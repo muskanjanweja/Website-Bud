@@ -5,8 +5,8 @@ import "./project.css";
 import { jest } from '@jest/globals'
 import data from "./moch-data.json"
 import { NavigateNextOutlined } from "@material-ui/icons";
-import ReadOnlyRow from "../../Project/ReadOnlyRow";
-import EditTableeRow from "../../Project/EditTableeRow";
+import ReadOnlyRow from "./ReadOnlyRow";
+import EditTableeRow from "./EditTableeRow";
 
 const Project = () => {
 
